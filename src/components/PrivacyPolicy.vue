@@ -104,6 +104,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.wrapBody{
+  margin: auto;
+  margin-top: 80px;
+  width: 85%;
+  overflow: hidden;
+}
 .custom-navbar{
   box-shadow: 0px 0px 0px rgba(100,99,99,0.9);
   background-color: rgba(252, 240, 189);

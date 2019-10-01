@@ -4,15 +4,15 @@
           <div class="first-view">
             <img class="header-body" src="@/assets/img/first_view_bg.png" width="100%" alt="">
             <div>
-            <h1>
-              <strong><span style="border-bottom: solid 5px #ffcf07">友達を</span></strong>
-              <br>
-              <strong><span style="border-bottom: solid 5px #ffcf07">お店に招待して</span></strong>
-              <br>
-              <strong><span style="border-bottom: solid 5px #ffcf07;">キャッシュをもらおう。</span></strong>
-            </h1>
+              <h1>
+                <strong><span style="border-bottom: solid 5px #ffcf07">友達を</span></strong>
+                <br>
+                <strong><span style="border-bottom: solid 5px #ffcf07">お店に招待して</span></strong>
+                <br>
+                <strong><span style="border-bottom: solid 5px #ffcf07;">キャッシュをもらおう。</span></strong>
+              </h1>
             </div>
-            <video src="@/assets/img/rndv_movie_0813.mp4" controls playsinline autoplay muted></video>
+            <!-- <video src="@/assets/img/rndv_movie_0813.mp4" controls playsinline autoplay muted></video> -->
             <div class="first-view-button-area"><a class="" href="#subscribe" id="close_nav_3" ><button class="subscribe-button">登録する</button></a></div>
           </div>
           <div class="row service" id="service">
@@ -269,18 +269,18 @@ video {
   font-weight: bold;
   }
 
-  .first-view-button-area{
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    top: 95%;
-    left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    margin:0;
-    padding:0;
-  }
+.first-view-button-area{
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 95%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+}
 
 /* .header-contents{
   text-shadow: 1px 1px 4px rgba(0,0,0,0.4);

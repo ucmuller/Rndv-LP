@@ -1,20 +1,19 @@
 <template>
-      <b-navbar class="custom-navbar" toggleable="lg">
-        <b-navbar-brand class="logo_a"><router-link to="/"><img class="navbar-brand" src="@/assets/img/RNDV_logo.png" width="100%" id="logo_custom" alt="logo"></router-link></b-navbar-brand>
-
+      <b-navbar class="custom-navbar fixed" toggleable="lg">
+        <b-navbar-brand class="logo_a"><router-link to="/"><img class="navbar-brand" src="@/assets/img/RNDV_logo.png" width="60%" id="logo_custom" alt="logo"></router-link></b-navbar-brand>
         <b-navbar-toggle class="" target="nav-collapse"></b-navbar-toggle>
-
         <b-collapse id="nav-collapse" is-nav>
-
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
-
             <b-navbar-nav>
-              <b-nav-item href="#service">友達を招待</b-nav-item>
-              <b-nav-item href="#detail">RNDVの特徴</b-nav-item>
-              <b-nav-item href="#user-voice">ユーザーの声</b-nav-item>
+              <b-nav-item class="nav-parts" href="#service"><span class="under-line">サービス</span></b-nav-item>
+              <b-nav-item class="nav-parts" href="#detail"><span class="under-line">使い方</span></b-nav-item>
+              <b-nav-item class="nav-parts" href="#about"><span class="under-line">特徴</span></b-nav-item>
+              <b-nav-item class="nav-parts" href="#information"><span class="under-line">FAQ</span></b-nav-item>
+              <b-nav-item class="nav-parts" href="#users-voice"><span class="under-line">ユーザーの声</span></b-nav-item>
+              <!-- <button class="subscribe-button"></button> -->
+              <div class="subscribe-button nav-parts" v-on:click="ankerLink('subscribe')"></div>
             </b-navbar-nav>
-
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -26,6 +25,12 @@ export default {
   data () {
     return {
     }
+  },
+  methods: {
+    ankerLink (link) {
+      location.hash = ''
+      location.hash = link
+    }
   }
 }
 </script>
@@ -33,12 +38,20 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .custom-navbar{
+  width: 100%;
+  margin: auto;
   box-shadow: 0px 0px 0px rgba(100,99,99,0.9);
-  background-color: rgba(252, 240, 189);
+  padding: 0.5rem 0rem;
+  position: fixed;
+  z-index: 3;
+  background-color: #FFF;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* background-color: rgba(252, 240, 189); */
 }
 
-.navbar-dark .navbar-nav .nav-link{
-  color: #333333;
+.navbar-light .navbar-nav .nav-link {
+  color: black;
 }
 
 .custom-toggler.navbar-toggler {
@@ -53,6 +66,16 @@ export default {
   border-color: rgba(100,99,99,0.8);
   background-color:rgba(100,99,99,0.2);
 }
+.navbar-toggler {
+  /* padding: 0.25rem 0.75rem; */
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.navbar-light .navbar-toggler-icon {
+}
 
 #logo_custom{
   margin-top: 0px;
@@ -60,5 +83,56 @@ export default {
 
 .logo_a{
   width:20%;
+}
+
+.subscribe-button {
+  border-radius: 25px;
+  color: #FFF;
+  background-image: url(../assets/img/btn/movecta.png);
+  background-repeat:no-repeat;
+  background-size: contain;
+  transition: .4s;
+  width: 150px;
+  height: 100%;
+  margin: auto;
+}
+
+.nav-parts{
+  margin-left: 40px;
+}
+
+.under-line:hover{
+  border-bottom: solid 2px #ffcf07;
+  color: #ffcf07;
+}
+
+@media screen and (max-width: 769px) {
+.custom-navbar{
+  width: 100%;
+  margin: auto;
+  box-shadow: 0px 0px 0px rgba(100,99,99,0.9);
+  padding: 0.5rem 0rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* background-color: rgba(252, 240, 189); */
+}
+
+.navbar-brand{
+  width: 50%;
+}
+
+.navbar-toggler {
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.nav-parts{
+  margin-left: 0px;
+}
+
 }
 </style>

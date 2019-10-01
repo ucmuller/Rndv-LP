@@ -1,0 +1,199 @@
+<template>
+    <div class="row information" id="information">
+        <div class="container">
+            <div class="section-title">
+              <h1 class="text-center"><strong><span class="under-line">よくあるご質問</span></strong></h1>
+            </div>
+            <div role="tablist">
+              <b-card no-body class="mb-1">
+                <b-card-header header-tag="header" class="p-1" role="tab">
+                  <b-button class="text-left information-question" block v-on:click="q_1 = !q_1" v-b-toggle.accordion-1 variant="light">
+                    <div class="text-left information-question">
+                      <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
+                      <p>お店が契約してなくても個人で利用することが可能ですか？</p>
+                    </div>
+                    <div v-if="q_1" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_1" class="information-icon"><v-icon name="angle-down"/></div>
+                  </b-button>
+                </b-card-header>
+                <b-collapse id="accordion-1" visible accordion="my-accordion1" role="tabpanel">
+                  <b-card-body>
+                    <b-card-text>
+                      <div class="text-left information-question">
+                        <div class="information-icon"><img src="@/assets/img/A1.png" width="35px" alt=""></div>
+                        <p>
+                          ランデブは、お店の契約がなくても個人でご利用いただくことが可能なサービスです。利用料もかかりませんので、ご安心してご利用下さい。
+                          詳細に関しては、利用規約をご確認下さい。
+                          <br>
+                          <br>
+                          ※在籍確認をお店にさせて頂くことがございます。
+                        </p>
+                      </div>
+                    </b-card-text>
+                  </b-card-body>
+                </b-collapse>
+              </b-card>
+
+              <b-card no-body class="mb-1">
+                <b-card-header header-tag="header" class="p-1" role="tab">
+                  <b-button class="text-left information-question" block v-on:click="q_2 = !q_2" v-b-toggle.accordion-2 variant="light">
+                    <div class="text-left information-question">
+                      <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
+                      <p>支払いは誰がしてくれるのですか？</p>
+                    </div>
+                    <div v-if="q_2" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_2" class="information-icon"><v-icon name="angle-down"/></div>
+                  </b-button>
+                </b-card-header>
+                <b-collapse id="accordion-2" accordion="my-accordion2" role="tabpanel">
+                  <b-card-body>
+                    <b-card-text>
+                      <div class="text-left information-question">
+                        <div class="information-icon"><img src="@/assets/img/A1.png" width="35px" alt=""></div>
+                        <p>
+                          キャンペーン期間（※2019年12月末）は、ランデブの運営会社、株式会社ランデブーがお支払い致します。
+                          2020年1月以降に関しては、改めてサイト内で告知させて頂きます。
+                        </p>
+                      </div>
+                    </b-card-text>
+                  </b-card-body>
+                </b-collapse>
+              </b-card>
+
+              <b-card no-body class="mb-1">
+                <b-card-header header-tag="header" class="p-1" role="tab">
+                  <b-button class="text-left information-question" v-on:click="q_3 = !q_3" block v-b-toggle.accordion-3 variant="light">
+                    <div class="text-left information-question">
+                      <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
+                      <p>支払いはいつ、どのように行われますか？</p>
+                    </div>
+                    <div v-if="q_3" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_3" class="information-icon"><v-icon name="angle-down"/></div>
+                  </b-button>
+                </b-card-header>
+                <b-collapse id="accordion-3" accordion="my-accordion3" role="tabpanel">
+                  <b-card-body>
+                    <b-card-text>
+                      <div class="text-left information-question">
+                        <div class="information-icon"><img src="@/assets/img/A1.png" width="35px" alt=""></div>
+                        <p>
+                          登録開始から9月30日分までの成果確定分を10月31日（木）に各自ご登録頂きました銀行口座にお振込み致します。
+                          銀行口座のご登録に関しては、最低支払額の3,000円を超えた方からご登録に関してのご連絡をさせていただきます。
+                          <br>
+                          また、10月以降のお支払いに関しては、月末締めの翌月末払いとなります。
+                        </p>
+                      </div>
+                    </b-card-text>
+                  </b-card-body>
+                </b-collapse>
+              </b-card>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+  name: 'InformationSection',
+  data () {
+    return {
+      q_1: true,
+      q_2: false,
+      q_3: false
+    }
+  }
+}
+</script>
+
+<style scoped>
+.section-title{
+  margin-bottom: 70px;
+}
+
+.section-title h1{
+  margin-top: 48px;
+  font-size: 34px;
+}
+
+.section-title h1:after {
+  /* position: absolute; */
+  content: " ";
+  display: block;
+  border-bottom: solid 7px #ffcf07;
+  width: 250px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.information{
+  width: 100%;
+  margin: auto;
+  margin-top: 48px;
+  padding-top: 60px;
+}
+
+.information-question{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: none;
+}
+.information-question:hover{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: none;
+}
+.information-question:active{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border: none;
+}
+
+.information-question p {
+  margin: auto;
+  margin-left: 20px;
+}
+
+.information-icon{
+  margin-right: 0;
+}
+.p-1{
+  background-color: white;
+  border-bottom: 1px solid rgba(84, 88, 91, 0.125);
+}
+.p-1:hover{
+  background-color: white;
+  border-bottom: 1px solid rgba(84, 88, 91, 0.125);
+}
+.p-1:active{
+  background-color: white;
+  border-bottom: 1px solid rgba(84, 88, 91, 0.125);
+}
+
+.mb-1{
+  border: white;
+}
+
+@media screen and (max-width: 768px) {
+.section-title h1{
+  margin-top: 48px;
+  font-size: 25px;
+}
+
+.section-title h1:after {
+  /* position: absolute; */
+  content: " ";
+  display: block;
+  border-bottom: solid 4px #ffcf07;
+  width: 180px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.information p {
+  font-size: 13px;
+}
+}
+</style>
