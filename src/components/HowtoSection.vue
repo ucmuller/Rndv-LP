@@ -9,7 +9,7 @@
                 <div class="col-xs-12 col-md-6 how-to-part-A-left">
                   <div class="how-to-heading">
                     <h3><strong>アナタが友人・家族を招待する</strong></h3>
-                    <p>ランデブ内で友人・家族の来店予約を代理入力して、LINEで予約内容を送信します。</p>
+                    <h5>ランデブ内で友人・家族の来店予約を代理入力して、LINEで予約内容を送信します。</h5>
                   </div>
                 </div>
                 <div class="col-xs-12 col-md-6 how-to-part-A-right">
@@ -23,7 +23,7 @@
                 <div class="col-xs-12 col-md-6 how-to-part-B-right">
                   <div class="how-to-heading">
                     <h3><strong>友人・家族が予約内容を確定する</strong></h3>
-                    <p>LINEで送られる予約内容を、招待された友人や家族が確認します。内容に不備がなければ、予約の確定をします。</p>
+                    <h5>LINEで送られる予約内容を、招待された友人や家族が確認します。内容に不備がなければ、予約の確定をします。</h5>
                   </div>
                 </div>
               </div>

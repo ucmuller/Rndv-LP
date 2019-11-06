@@ -216,14 +216,14 @@ export default {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  width: 1.1%;
+  width: 1%;
   height: 2%;
   top: 30%;
   left: 70%;
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  margin: auto;
+  /* margin: auto; */
   display: none;
 
 }
@@ -295,8 +295,8 @@ export default {
   background-size: cover;
   width: 100%;
   height: 77%;
-  margin-top: 6%;
-  margin-left: 22%;
+  margin-top: 15%;
+  margin-left: 26%;
   /* margin-top: 30%; */
 }
 
@@ -328,7 +328,68 @@ export default {
   z-index: 1;
 } */
 
-@media screen and (max-width: 1232px) {
+@media screen and (max-width: 1280px) {
+.logo-R{
+  background-image: url(../assets/img/anime1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  /* width: 2%; */
+  /* height: 2%; */
+  top: 30%;
+  left: 70%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  display: none;
+  margin: auto;
+}
+.logo-N{
+  background-image: url(../assets/img/anime2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  /* width: 2%; */
+  /* height: 2%; */
+  top: 30%;
+  left: 70%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+    display: none;
+
+}
+.logo-D{
+  background-image: url(../assets/img/anime3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  /* width: 2%;
+  height: 2%; */
+  top: 30%;
+  left: 70%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  /* margin: auto; */
+  display: none;
+
+}
+.logo-V{
+  background-image: url(../assets/img/anime4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  /* width: 2%; */
+  /* height: 2%; */
+  top: 30%;
+  left: 70%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  display: none;
+}
+
 .first-view-heading-top {
   font-size: 15px;
   color: #18C0C1;
@@ -342,8 +403,8 @@ export default {
   background-size: cover;
   width: 100%;
   height: 77%;
-  margin-top: 6%;
-  margin-left: 22%;
+  margin-top: 5%;
+  margin-left: 25%;
   /* margin-top: 30%; */
 }
 .first-view-heading h1 {

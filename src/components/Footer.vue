@@ -1,14 +1,15 @@
 <template>
     <footer v-if="width >= 768" class="container footer bottom-section">
       <div class="footer-contents">
-        <div class="footer-contents-parts">サービスへの想い</div>
-        <div class="footer-contents-parts" v-on:click="rooterPush('/tos')">利用規約</div>
-        <div class="footer-contents-parts" v-on:click="rooterPush('/privacypolicy')">プライバシーポリシー</div>
-        <div class="footer-contents-parts">よくあるご質問</div>
-        <div class="footer-contents-parts">運営会社</div>
+        <div class="footer-contents-parts"><a href="https://rendezvous.studio.design/" class="footer-anker">サービスへの想い</a></div>
+        <div class="footer-contents-parts"><router-link to="/tos" class="footer-anker">利用規約</router-link></div>
+        <div class="footer-contents-parts"><router-link to="/privacypolicy" class="footer-anker">プライバシーポリシー</router-link></div>
+        <div class="footer-contents-parts"><router-link to="/frequentlyaskedquestions" class="footer-anker">よくあるご質問</router-link></div>
+        <div class="footer-contents-parts"><a href="https://rendezvous.studio.design/" class="footer-anker">運営会社</a></div>
         <div class="footer-contents-parts">
           <img src="@/assets/img/Facebook.png" width="50px" style="margin-right:10px;" alt="">
           <img src="@/assets/img/Twitter.png" width="50px" alt="">
+          <img src="@/assets/img/docomo.png" width="150px" alt="">
         </div>
       </div>
       <div class="button-area">
@@ -26,15 +27,15 @@
     </footer>
     <footer v-else-if="width < 768" class="container footer bottom-section">
       <div class="footer-contents">
-        <div class="footer-contents-parts">サービスへの想い</div>
-        <div class="footer-contents-parts" v-on:click="rooterPush('/tos')">利用規約</div>
+        <div class="footer-contents-parts"><a href="https://rendezvous.studio.design/" class="footer-anker">サービスへの想い</a></div>
+        <div class="footer-contents-parts"><router-link to="/tos" class="footer-anker">利用規約</router-link></div>
       </div>
       <div class="footer-contents">
-        <div class="footer-contents-parts" v-on:click="rooterPush('/privacypolicy')">プライバシーポリシー</div>
-        <div class="footer-contents-parts">よくあるご質問</div>
+        <div class="footer-contents-parts"><router-link to="/privacypolicy" class="footer-anker">プライバシーポリシー</router-link></div>
+        <div class="footer-contents-parts"><router-link to="/frequentlyaskedquestions" class="footer-anker">よくあるご質問</router-link></div>
       </div>
       <div class="footer-contents">
-        <div class="footer-contents-parts">運営会社</div>
+        <div class="footer-contents-parts"><a href="https://rendezvous.studio.design/" class="footer-anker">サービスへの想い</a></div>
         <div class="footer-contents-parts">
           <img src="@/assets/img/Facebook.png" width="50px" style="margin-right:10px;" alt="">
           <img src="@/assets/img/Twitter.png" width="50px" alt="">
@@ -43,6 +44,12 @@
 
       <div class="button-area">
        <button class="btn-flat-border" v-on:click="sendMail">お問い合わせ</button>
+      </div>
+
+            <div class="footer-contents">
+        <div class="footer-contents-parts">
+          <img src="@/assets/img/docomo.png" width="200px" style="margin-right:10px;" alt="">
+        </div>
       </div>
       <div class="button-area">
         <p class="text-center">&copy; Copyright © 2019 RNDV Inc. All rights reserved.</p>
@@ -144,6 +151,12 @@ export default {
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+}
+.footer-anker{
+  color: #ffffff;
+}
+.footer-anker:hover{
+  color: #FFD428;
 }
 
 @media screen and (max-width: 768px) {

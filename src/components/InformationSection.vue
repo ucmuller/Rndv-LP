@@ -1,9 +1,11 @@
 <template>
     <div class="row information" id="information">
         <div class="container">
+
             <div class="section-title">
               <h1 class="text-center"><strong><span class="under-line">よくあるご質問</span></strong></h1>
             </div>
+
             <div role="tablist">
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
@@ -87,6 +89,10 @@
                   </b-card-body>
                 </b-collapse>
               </b-card>
+
+            </div>
+            <div class="more-information">
+              <router-link to="/frequentlyaskedquestions"><p>さらに見る></p></router-link>
             </div>
         </div>
     </div>
@@ -130,6 +136,7 @@ export default {
   margin: auto;
   margin-top: 48px;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .information-question{
@@ -174,6 +181,14 @@ export default {
 
 .mb-1{
   border: white;
+}
+.more-information{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.more-information p {
+  color: #333333;
 }
 
 @media screen and (max-width: 768px) {

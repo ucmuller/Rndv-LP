@@ -5,6 +5,7 @@ import ReferralPage from '@/components/ReferralPage'
 import Payment from '@/components/Payment'
 import PrivacyPolicy from '@/components/PrivacyPolicy'
 import Tos from '@/components/Tos'
+import FrequentlyAskedQuestions from '@/components/FrequentlyAskedQuestions'
 
 Vue.use(Router)
 Vue.component('router-link', Vue.options.components.RouterLink)
@@ -39,6 +40,14 @@ export default new Router({
       path: '/tos',
       name: 'Tos',
       component: Tos
+    },
+    {
+      path: '/frequentlyaskedquestions',
+      name: 'FrequentlyAskedQuestions',
+      component: FrequentlyAskedQuestions
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 })
