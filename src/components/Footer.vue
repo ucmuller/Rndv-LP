@@ -57,7 +57,7 @@
         <!-- <p class="text-center">
           <router-link to="/privacypolicy">プライバシーポリシー</router-link>
           |
-          <router-link to="/tos">利用規約</router-link>
+          <router-link to="/tos">利用規約</router-link> ｀
           <br>
           <router-link to="/payment">成果報酬の支払い方法</router-link>
         </p> -->

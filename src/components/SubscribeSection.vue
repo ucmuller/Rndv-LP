@@ -28,6 +28,9 @@
         <b-modal ref="my-modal" hide-footer centered title="ご入力ありがとうございます。">
             <div class="d-block text-center">
               <h5>{{email}}<br>に登録リンクをお送りいたします。</h5>
+              <p>下記に紹介者の「お名前」「勤務店舗」を入力の上、送信ボタンをタップしてください。</p>
+              <input v-model="staff_name" type="" class="form-control form-control-lg" id="email" placeholder="紹介者名">
+              <input v-model="staff_workplace" type="" class="form-control form-control-lg" id="email" placeholder="紹介者の勤務店舗名">
             </div>
             <b-button class="mt-3" variant="outline-primary" block @click="sendMail">送信する</b-button>
             <b-button class="mt-2" variant="outline-danger" block @click="hideModal('my-modal')">キャンセル</b-button>
@@ -58,7 +61,9 @@ export default {
   data () {
     return {
       email: '',
-      tos_status: 'not_accepted'
+      tos_status: 'not_accepted',
+      staff_name: '',
+      staff_workplace: ''
     }
   },
   methods: {
@@ -80,7 +85,9 @@ export default {
     sendMail () {
       let data = {
         email: this.email,
-        url: 'https://reserve-beta.firebaseapp.com/fromlp'
+        url: 'https://reserve-beta.firebaseapp.com/fromlp',
+        staff_name: this.staff_name,
+        staff_workplace: this.staff_workplace
       }
       const mailer = functions.httpsCallable('sendMail')
 
