@@ -1,4 +1,5 @@
 <template>
+<div>
     <div class="row users-voice" id="users-voice">
         <b-container class="container">
             <div class="section-title">
@@ -85,8 +86,18 @@
                 </b-col>
             </b-row>
         </b-container>
-
     </div>
+    <div class="interview-pcbn" v-if="width>768">
+        <a href="https://rndv.co.jp" target="_blank">
+          <img src="@/assets/img/pcbn_interview.jpg" width="100%" style="" height="">
+        </a>
+    </div>
+    <div class="interview-spbn" v-if="width<=768">
+        <a href="https://rndv.co.jp" target="_blank">
+          <img src="@/assets/img/spbn_interview.jpg" width="100%" style="" height="">
+        </a>
+    </div>
+  </div>
               <!-- <div class="container user-voice" id="user-voice">
                   <div class="section-title">
                       <h1 class="text-center"><strong><span style="border-bottom: solid 5px #ffcf07">ユーザーの声</span></strong></h1>
@@ -136,8 +147,16 @@ export default {
     return {
       slickOptions: {
         arrows: false
-      }
+      },
+      width: window.innerWidth
     }
+  },
+  created () {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
+  },
+  destroyed () {
+    window.removeEventListener('resize', this.handleResize)
   },
   methods: {
     next () {
@@ -150,6 +169,9 @@ export default {
       this.$nextTick(() => {
         this.$refs.slick.reSlick()
       })
+    },
+    handleResize () {
+      this.width = window.innerWidth
     }
   }
 }
@@ -252,6 +274,16 @@ export default {
   padding-top: 2%;
 }
 
+.interview-pcbn{
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.interview-pcbn a:hover{
+  opacity: 0.7;
+}
+
 /* .next-page-button{
   width: 100px;
   height: 100px;
@@ -339,6 +371,14 @@ export default {
 .back-page-button{
   width: 100%;
   /* height: 50px; */
+}
+.interview-spbn{
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+}
+.interview-spbn a:hover{
+  opacity: 0.7;
 }
 }
 </style>

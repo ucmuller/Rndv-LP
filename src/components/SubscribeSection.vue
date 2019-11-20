@@ -8,7 +8,18 @@
               <h5 class="text-center">メールアドレスで登録。カンタン利用！</h5>
             </div>
             <div class="form-group">
-            <input v-model="email" type="email" class="form-control form-control-lg subscribe-form" id="email" placeholder="aaa@exmaple.com">
+              <div class="cp_iptxt">
+                <p>メールアドレス<span style="color: red;">[必須]</span></p>
+                <input v-model="email" type="email" class="" id="email" placeholder="aaa@exmaple.com">
+              </div>
+              <div class="cp_iptxt">
+                <p>ご紹介者様のお名前<span>[任意]</span></p>
+                <input v-model="staff_name" type="text" class="" id="" placeholder="">
+              </div>
+              <div class="cp_iptxt">
+                <p>ご紹介者様の勤務店舗<span>[任意]</span></p>
+                <input v-model="staff_workplace" type="text" class="" id="" placeholder="">
+              </div>
             <b-form-checkbox
               id="checkbox-1"
               v-model="tos_status"
@@ -28,9 +39,6 @@
         <b-modal ref="my-modal" hide-footer centered title="ご入力ありがとうございます。">
             <div class="d-block text-center">
               <h5>{{email}}<br>に登録リンクをお送りいたします。</h5>
-              <p>下記に紹介者の「お名前」「勤務店舗」を入力の上、送信ボタンをタップしてください。</p>
-              <input v-model="staff_name" type="" class="form-control form-control-lg" id="email" placeholder="紹介者名">
-              <input v-model="staff_workplace" type="" class="form-control form-control-lg" id="email" placeholder="紹介者の勤務店舗名">
             </div>
             <b-button class="mt-3" variant="outline-primary" block @click="sendMail">送信する</b-button>
             <b-button class="mt-2" variant="outline-danger" block @click="hideModal('my-modal')">キャンセル</b-button>
@@ -79,6 +87,8 @@ export default {
     hideModal (modal, status) {
       if (status === 'success') {
         this.email = ''
+        this.staff_name = ''
+        this.staff_workplace = ''
       }
       this.$refs[modal].hide()
     },
@@ -102,6 +112,7 @@ export default {
         })
         .finally(() => {
           this.loading = false
+          this.$ga.event('button', 'click', 'mail', 1)
         })
     }
   }
@@ -109,6 +120,15 @@ export default {
 </script>
 
 <style scoped>
+
+input {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  width: 100%;
+}
 .section-title{
   margin-top: 48px;
   margin-bottom: 70px;
@@ -142,6 +162,7 @@ export default {
 
 .subscribe-title h5{
   line-height: 1.5;
+  margin-bottom: 30px;
 }
 
 .form-group {
@@ -172,12 +193,51 @@ export default {
 }
 
 .subscribe-form{
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.form-group p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
 }
 
 .form-control::placeholder{
   color: #cccccc;
+}
+
+.cp_iptxt {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.cp_iptxt input[type='text'] {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  letter-spacing: 1px;
+  border: 0;
+}
+.cp_iptxt input[type='text']:focus {
+  outline: none;
+}
+.cp_iptxt input[type='text']:focus::after {
+  outline: none;
+}
+.cp_iptxt::after {
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: -1px;
+  content: '';
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #ffcf07;
+}
+
+.form-p {
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -197,6 +257,7 @@ export default {
 }
 .subscribe-title h5{
   font-size: 15px;
+  margin-bottom: 30px;
 }
 .form-group {
   margin:auto;
