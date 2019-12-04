@@ -48,6 +48,8 @@ export default new Router({
     }
   ],
   scrollBehavior (to, from, savedPosition) {
-    return { x: 0, y: 0 }
+    // ハッシュがある時にはその地点へとスクロールする
+    const selector = location.hash
+    return selector ? { selector } : { x: 0, y: 0 }
   }
 })

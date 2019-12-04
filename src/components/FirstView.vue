@@ -22,7 +22,8 @@
                 </div>
             </transition>
         </div>
-        <div class="float"><img src="@/assets/img/scroll.png" height="30px" alt=""></div>      <!-- <video src="@/assets/img/rndv_movie_0813.mp4" controls playsinline autoplay muted></video> -->
+        <!-- <div class="float"><img src="@/assets/img/scroll.png" height="30px" alt=""></div> -->
+         <div class="subscribe-button-pc" v-on:click="ankerLink('subscribe')"></div>
     </div>
 
     <div v-else-if="width < 768" class="first-view-mobile">
@@ -43,8 +44,7 @@
                   <img src="@/assets/img/LP_capture1.gif" width="80%" alt="">
                 </div>
             </transition>
-                    <div class="subscribe-button" v-on:click="ankerLink('subscribe')"></div>
-
+            <div class="subscribe-button" v-on:click="ankerLink('subscribe')"></div>
         </div>
 
       <!-- <video src="@/assets/img/rndv_movie_0813.mp4" controls playsinline autoplay muted></video> -->
@@ -159,6 +159,20 @@ export default {
   background-color: #FFD428;
   padding-top: 56.25%;
   /* content: url(../img/first_view_bg.png) */
+}
+
+.subscribe-button-pc {
+  border-radius: 25px;
+  color: #FFF;
+  background-image: url(../assets/img/btn/movecta.png);
+  background-repeat:no-repeat;
+  background-size: cover;
+  transition: .4s;
+  width: 200px;
+  margin: auto;
+  height: 50px;
+  position: relative;
+  z-index: 10;
 }
 
 .v-enter-active, .v-leave-active {

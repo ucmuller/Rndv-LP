@@ -1,6 +1,10 @@
 <template>
       <b-navbar class="custom-navbar fixed" toggleable="lg">
-        <b-navbar-brand class="logo_a"><router-link to="/"><img class="navbar-brand" src="@/assets/img/RNDV_logo.png" width="60%" id="logo_custom" alt="logo"></router-link></b-navbar-brand>
+        <b-navbar-brand class="logo_a">
+          <router-link to="/"><img class="navbar-brand" src="@/assets/img/RNDV_logo.png" width="60%" id="logo_custom" alt="logo"></router-link>
+          <img v-if="width < 768" src="@/assets/img/btn/login_button.png" v-on:click="ankerLink('https://reserve-beta.firebaseapp.com/signinfromlp')" class="subscribe-button" alt="">
+          <!-- <div class="subscribe-button" v-on:click="ankerLink('https://reserve-beta.firebaseapp.com/signin')"></div> -->
+        </b-navbar-brand>
         <b-navbar-toggle class="" target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <!-- Right aligned nav items -->
@@ -12,7 +16,7 @@
               <b-nav-item class="nav-parts" href="#information"><span class="under-line">FAQ</span></b-nav-item>
               <b-nav-item class="nav-parts" href="#users-voice"><span class="under-line">ユーザーの声</span></b-nav-item>
               <!-- <button class="subscribe-button"></button> -->
-              <div class="subscribe-button nav-parts" v-on:click="ankerLink('subscribe')"></div>
+              <div class="subscribe-button nav-parts" v-on:click="ankerLink('https://reserve-beta.firebaseapp.com/signinfromlp')"></div>
             </b-navbar-nav>
           </b-navbar-nav>
         </b-collapse>
@@ -24,12 +28,20 @@ export default {
   name: 'Header',
   data () {
     return {
+      width: window.innerWidth
     }
+  },
+  created () {
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
   },
   methods: {
     ankerLink (link) {
-      location.hash = ''
-      location.hash = link
+      location.href = ''
+      location.href = link
+    },
+    handleResize () {
+      this.width = window.innerWidth
     }
   }
 }
@@ -88,7 +100,7 @@ export default {
 .subscribe-button {
   border-radius: 25px;
   color: #FFF;
-  background-image: url(../assets/img/btn/movecta.png);
+  background-image: url(../assets/img/btn/login_button.png);
   background-repeat:no-repeat;
   background-size: contain;
   transition: .4s;
@@ -132,6 +144,19 @@ export default {
 
 .nav-parts{
   margin-left: 0px;
+}
+
+.subscribe-button {
+  border-radius: 25px;
+  color: #FFF;
+  background-image: url(../assets/img/btn/login_button.png);
+  background-repeat:no-repeat;
+  background-size: contain;
+  transition: .4s;
+  width: 120px;
+  height: 100%;
+  margin: auto;
+  margin-left: 65px;
 }
 
 }

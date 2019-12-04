@@ -112,7 +112,7 @@ export default {
         })
         .finally(() => {
           this.loading = false
-          this.$ga.event('button', 'click', 'mail', 1)
+          this.$ga.event('subscribe-button')
         })
     }
   }

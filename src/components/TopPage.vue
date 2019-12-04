@@ -1,6 +1,7 @@
 <template>
   <div class="wrap">
         <first-view/>
+        <!-- <div class="subscribe-button" v-on:click="ankerLink('subscribe')"></div> -->
         <service-section/>
         <howto-section/>
         <div class="subscribe-button" v-on:click="ankerLink('subscribe')"></div>
