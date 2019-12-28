@@ -88,12 +88,12 @@
         </b-container>
     </div>
     <div class="interview-pcbn" v-if="width>768">
-        <a href="https://rndv.co.jp" target="_blank">
+        <a href="https://blog.rndv.jp" target="_blank">
           <img src="@/assets/img/pcbn_interview.jpg" width="100%" style="" height="">
         </a>
     </div>
     <div class="interview-spbn" v-if="width<=768">
-        <a href="https://rndv.co.jp" target="_blank">
+        <a href="https://blog.rndv.jp" target="_blank">
           <img src="@/assets/img/spbn_interview.jpg" width="100%" style="" height="">
         </a>
     </div>
