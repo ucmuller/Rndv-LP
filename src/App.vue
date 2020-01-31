@@ -19,10 +19,11 @@ export default {
 </script>
 
 <style>
+
 #app {
   margin: auto;
   color: #333333;
   overflow: hidden;
-  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "a-otf-midashi-go-mb31-pr6n", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-family: "M PLUS Rounded 1c"
 }
 </style>

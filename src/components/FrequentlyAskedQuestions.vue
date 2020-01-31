@@ -59,8 +59,7 @@
                       <div class="text-left information-question">
                         <div class="information-icon"><img src="@/assets/img/A1.png" width="35px" alt=""></div>
                         <p>
-                          キャンペーン期間（※2019年12月末）は、ランデブの運営会社、株式会社ランデブーがお支払い致します。
-                          2020年1月以降に関しては、改めてサイト内で告知させて頂きます。
+                          キャンペーン期間を延長し（※2020年6月末）は、ランデブの運営会社、株式会社ランデブーがお支払い致します。<br>※キャンペーン期間や還元率、配布条件などは予告なく終了する可能性がありますが、アプリ通知、サイト内でご案内差し上げます。
                         </p>
                       </div>
                     </b-card-text>
@@ -85,10 +84,11 @@
                       <div class="text-left information-question">
                         <div class="information-icon"><img src="@/assets/img/A1.png" width="35px" alt=""></div>
                         <p>
-                          登録開始から9月30日分までの成果確定分を10月31日（木）に各自ご登録頂きました銀行口座にお振込み致します。
-                          銀行口座のご登録に関しては、最低支払額の3,000円を超えた方からご登録に関してのご連絡をさせていただきます。
+                          2020年2月末の成果確定した未払い分を3月末日に各自ご登録頂きましたLINE Payでお支払いいたします。
+                          LINE PAYのご登録に関しては、2月末日を目安にご連絡させていただきます。
                           <br>
-                          また、10月以降のお支払いに関しては、月末締めの翌月末払いとなります。
+                          また、2020年3月以降の成果に関しましては、毎月の成果を翌々月の10日にお支払いとなります。
+                          （※お支払い対象は3,000円以上の成果を超えてからとなります。3,000円未満の場合は翌月への繰越となります。）
                         </p>
                       </div>
                     </b-card-text>
@@ -225,9 +225,36 @@
                       <div class="text-left information-question">
                         <div class="information-icon"><img src="@/assets/img/A1.png" width="35px" alt=""></div>
                         <p>
-                          2019年12月末までを想定しております。それ以降に関しては誠意検討中でございます。
+                          ご利用が多く、サービス評価が上がっておりますので、2019年12月末までのキャンペーンを2020年6月末まで延長しました。
+                        </p>
+                      </div>
+                    </b-card-text>
+                  </b-card-body>
+                </b-collapse>
+              </b-card>
+
+              <b-card no-body class="mb-1">
+                <b-card-header header-tag="header" class="p-1" role="tab">
+                  <b-button class="text-left information-question" v-on:click="q_8 = !q_8" block v-b-toggle.accordion-8 variant="light">
+                    <div class="text-left information-question">
+                      <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
+                      <p>招待コードがないと利用が出来ませんか？</p>
+                    </div>
+                    <div v-if="q_8" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_8" class="information-icon"><v-icon name="angle-down"/></div>
+                  </b-button>
+                </b-card-header>
+                <b-collapse id="accordion-8" accordion="my-accordion8" role="tabpanel">
+                  <b-card-body>
+                    <b-card-text>
+                      <div class="text-left information-question">
+                        <div class="information-icon"><img src="@/assets/img/A1.png" width="35px" alt=""></div>
+                        <p>
+                         優良スタッフ、また優良店舗であることを担保するために、ランデブをすでに使っているスタッフが紹介しないと他のスタッフは利用が出来ない仕様になっています。周りのお友達に利用があるかを聞いてみて下さい。
+                        <br>
+                          また、招待コードがなくても利用がしたいスタッフ向けに、審査希望の登録フォームをご用意しております。順次、招待コードをお送りさせて頂いておりますので、ご希望の方はURLよりご登録下さい。
                           <br>
-                          皆様のご利用が多ければ多いほど、またご協力頂けるだけ期間の延長が可能となりますので、皆様のご利用、ご協力をどうぞよろしくおねがいします。
+                          <a href="https://forms.gle/2wwVfU9uDXp35GzdA">審査希望の登録フォーム</a>
                         </p>
                       </div>
                     </b-card-text>
