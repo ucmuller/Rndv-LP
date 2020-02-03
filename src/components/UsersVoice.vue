@@ -1,93 +1,52 @@
 <template>
 <div>
     <div class="row users-voice" id="users-voice">
-        <b-container class="container">
+        <div class="container">
             <div class="section-title">
                 <h1 class="text-center"><strong><span class="under-line">ユーザーの声</span></strong></h1>
             </div>
-            <b-row class="row">
-                <b-col cols="1" id="arrows" class="arrows">
-                  <div v-on:click="prev" class="back-page-button">
-                    <img src="@/assets/img/backpage.png" width="100%" alt="">
-                  </div>
-                </b-col>
-                <b-col cols="10" class="">
-                <slick ref="slick" :options="slickOptions">
-                      <div class="users-voice-detail">
-                        <h5><strong>友人来店が増えて、店が盛り上がってます！</strong></h5>
-                        <div class="detail-1-text">
-                          <p>
-                            可視化されたことで競争力が生まれて、先月、また前年と比較しても友人経由の売上が伸びてて助かってます!
-                          </p>
-                        </div>
-                        <div class="detail-1-icon">
-                          <img src="@/assets/img/user-3_modify.png" width="80px" alt="">
-                          <p class="">
-                            カフェバー オーナー
-                            <br>
-                            高田さん
-                          </p>
-                        </div>
-                      </div>
-                      <div class="users-voice-detail">
-                        <h5><strong>店長に感謝される回数増えたのが嬉しい！</strong></h5>
-                        <div class="detail-1-text">
-                          <p>
-                            お金もらえるのは嬉しいけど、店長や同僚スタッフに「お前すげーな」って褒められるのが嬉しい!
-                          </p>
-                        </div>
-                        <div class="detail-1-icon">
-                          <img src="@/assets/img/user-2_modify.png" width="80px" alt="">
-                          <p class="">
-                            カフェバー 本職役者
-                            <br>
-                            原さん
-                          </p>
-                        </div>
-                      </div>
-                    <div class="users-voice-detail">
-                      <h5><strong>最初だけ手間取ったけど、すぐに慣れた！</strong></h5>
-                      <div class="detail-1-text">
-                        <p>
-                          シンプルで余計な機能がなくて迷わず使える。新しい手間がほとんどないのがすぐに使えた！
-                        </p>
-                      </div>
-                      <div class="detail-1-icon">
-                        <img src="@/assets/img/user-1_modify.png" width="80px" alt="">
-                        <p class="">
-                          カフェバー ヘルプスタッフ
-                          <br>
-                          諸橋さん
-                        </p>
-                      </div>
+            <div data-v-0cf9c13e="" class="users_voice_content">
+              <div id="users-voice" class="row users-voice-card">
+                <div class="row row">
+                  <a class="users_voice_contents" href="https://blog.rndv.jp/intervew-anpool/" target="_blank">
+                    <div class="users_voice_contents_img_wrapper">
+                      <img class="users_voice_contents_img" src="@/assets/img/voice_img_1.jpg" width="310" height="227" alt="">
                     </div>
-                    <div class="users-voice-detail">
-                        <h5><strong>店長に相談して、報酬はスタッフで均等分けにした。</strong></h5>
-                        <div class="detail-1-text">
-                          <p>
-                            全員で大切にしたいお客さんなので、誰が呼んでも同じ対応を出来るようにスタッフ全員で分けるようにしました。
-                          </p>
-                        </div>
-                        <div class="detail-1-icon">
-                          <img src="@/assets/img/user-4_modify.png" width="80px" alt="">
-                          <p class="">
-                            居酒屋 スタッフ
-                            <br>
-                            増井さん
-                          </p>
-                        </div>
+                    <div class="users_voice_contents_txts">
+                      <h3 class="users_voice_contents_txts_ttl">【ANPOOLs導入】スタッフを評価するのは「お客さん」であるべき</h3>
+                      <p class="users_voice_contents_txts_txt">今回は、RNDV（ランデブ）を一番最初に導入して、お店で利用してくれているオーナー兼店長の髙田裕也さんにインタビューさせて頂きました。…</p>
+                      <p class="users_voice_contents_txts_more">more</p>
                     </div>
-                </slick>
-                </b-col>
-                <b-col cols="1" id="arrows" class="arrows">
-                  <div v-on:click="next" class="next-page-button">
-                    <img src="@/assets/img/nextpage.png" width="100%" alt="">
-                  </div>
-                </b-col>
-            </b-row>
-        </b-container>
+                  </a>
+                  <a class="users_voice_contents" href="https://blog.rndv.jp/case_startbar/" target="_blank">
+                    <div class="users_voice_contents_img_wrapper">
+                      <img class="users_voice_contents_img" src="@/assets/img/voice_img_2.jpg" width="310" height="227" alt="">
+                    </div>
+                    <div class="users_voice_contents_txts">
+                      <h3 class="users_voice_contents_txts_ttl">【招待文例付き】2019年ラグビーW杯で集客に成功した飲食店の招待例</h3>
+                      <p class="users_voice_contents_txts_txt">2019年はラグビー元年と言えるでしょう。本当に大きな感動を与えてくれました。ありがとう日本代表！！第一戦から積極的にラグビー観戦で招待を…</p>
+                      <p class="users_voice_contents_txts_more">more</p>
+                    </div>
+                  </a>
+                  <a class="users_voice_contents" href="https://blog.rndv.jp/interview_startbar/" target="_blank">
+                    <div class="users_voice_contents_img_wrapper">
+                      <img class="users_voice_contents_img" src="@/assets/img/voice_img_3.jpg" width="310" height="227" alt="">
+                    </div>
+                    <div class="users_voice_contents_txts">
+                      <h3 class="users_voice_contents_txts_ttl">初心者向けのハウトー開催で上手に集客しているお店に潜入してみた</h3>
+                      <p class="users_voice_contents_txts_txt">ランデブを利用しているスタッフから招待されたら、空いてる以上は必ず足を運ぶ企画「We are a STARTUP」のVol,3。ランデブをうまく活用し…</p>
+                      <p class="users_voice_contents_txts_more">more</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="common_btns users_voice_content_btns">
+                  <button class="common_btn btn_more" @click="ankerLink('https://blog.rndv.jp')">もっと見る</button>
+                </div>
+              </div>
+            </div>
+        </div>
     </div>
-    <div class="interview-pcbn" v-if="width>768">
+    <!-- <div class="interview-pcbn" v-if="width>768">
         <a href="https://blog.rndv.jp" target="_blank">
           <img src="@/assets/img/pcbn_interview.jpg" width="100%" style="" height="">
         </a>
@@ -96,39 +55,8 @@
         <a href="https://blog.rndv.jp" target="_blank">
           <img src="@/assets/img/spbn_interview.jpg" width="100%" style="" height="">
         </a>
-    </div>
+    </div> -->
   </div>
-              <!-- <div class="container user-voice" id="user-voice">
-                  <div class="section-title">
-                      <h1 class="text-center"><strong><span style="border-bottom: solid 5px #ffcf07">ユーザーの声</span></strong></h1>
-                  </div>
-                  <div class="row">
-                      <div class="card user-card col-md-4">
-                        <img class="card-img-top" src="@/assets/img/user-3.png" alt="画像">
-                        <div class="card-body">
-                          <h5 class="card-title">友人来店が増えて店が盛り上がってます！</h5>
-                          <br>
-                          <p class="card-text">可視化されたことで競争力が生まれて、<br>前年と比較しても友人経由の売上が伸びてて助かってます。</p>
-                        </div>
-                      </div>
-                      <div class="card user-card col-md-4">
-                        <img class="card-img-top" src="@/assets/img/user-2.png" alt="画像">
-                        <div class="card-body">
-                          <h5 class="card-title">店長に感謝される回数が増えたのが嬉しい!</h5>
-                          <br>
-                          <p class="card-text">お金もらえるのは嬉しいけど、<br>店長や同僚スタッフに「お前すげーな」って褒められるのが嬉しい</p>
-                        </div>
-                      </div>
-                      <div class="card user-card col-md-4">
-                        <img class="card-img-top" src="@/assets/img/user-1.png" alt="画像">
-                        <div class="card-body">
-                          <h5 class="card-title">最初だけ手間取ったけど、<br>すぐに慣れた!</h5>
-                          <br>
-                          <p class="card-text">シンプルで余計な機能がなくて迷わず使える。<br>新しい手間がほとんどないのがすぐに使えた！</p>
-                        </div>
-                      </div>
-                  </div>
-              </div> -->
 </template>
 
 <script>
@@ -172,6 +100,10 @@ export default {
     },
     handleResize () {
       this.width = window.innerWidth
+    },
+    ankerLink (link) {
+      location.href = ''
+      location.href = link
     }
   }
 }
@@ -180,6 +112,7 @@ export default {
 <style scoped>
 .section-title{
   margin-bottom: 70px;
+  margin-top: 48px;
 }
 
 .section-title h1{
@@ -203,16 +136,16 @@ export default {
 .users-voice{
   width: 100%;
   margin: auto;
-  background-color: #FFF8EA;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: 48px;
+  background-color: #ffcf07;
   font-weight: bold;
-  padding-top: 80px;
 }
 
 .users-voice-detail{
   width: 100%;
   height: 300px;
-  /* background: #FFF8EA; */
-  /* margin-bottom: 48px; */
   text-align: center;
   font-family: "TsukuBRdGothic-Regular";
 }
@@ -269,6 +202,154 @@ export default {
   margin-top: 2%;
 }
 
+.users-voice-detail{
+  width: 100%;
+  height: 350px;
+  /* background: #FFF8EA; */
+  /* margin-bottom: 48px; */
+  text-align: center;
+  font-family: "TsukuBRdGothic-Regular";
+}
+.users-voice-detail h5{
+  font-size: 15px;
+}
+.users-voice-detail p{
+  font-size: 13px;
+}
+
+.users_voice_content .users-voice{
+  padding-bottom: 100px;
+}
+.users_voice_content .section-title h1:after{
+  border-bottom: none;
+  background: #000;
+  width: 168px;
+  height: 6px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.users_voice_contents{
+  display: inline-block;
+  background: #fff;
+  width: 30%;
+  margin-left: 5%;
+  border-radius: 25px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  box-shadow: 0 8px 14px rgba(211,141,0,0.2);
+}
+.users_voice_contents:first-child{
+  margin-left: 0;
+}
+.users_voice_contents:hover{
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.users_voice_contents_img_wrapper{
+  position: relative;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  margin: auto 0;
+  overflow: hidden;
+  border-radius: 25px 25px 0 0;
+  height: auto;
+  padding-top: 73.225806%;
+  opacity: 1;
+  transform: scale(1);
+}
+.users_voice_contents_img{
+  position: absolute;
+  left: -500px;
+  top: -500px;
+  bottom: -500px;
+  right: -500px;
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.users_voice_contents_img{
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.users_voice_contents:hover .users_voice_contents_img{
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  transform: scale(1.1);
+}
+
+.users_voice_contents_txts{
+  color: #000;
+  padding: 20px;
+}
+.users_voice_contents_txts_ttl{
+  font-size: 16px;
+  font-weight: 900;
+  margin: 0 auto;
+  line-height: 1.6;
+  overflow: hidden;
+  height: 50px;
+  max-height: 50px;
+}
+.users_voice_contents_txts_txt{
+  font-size: 13px;
+  margin: 10px auto 0;
+}
+.users_voice_contents_txts_more{
+  position: relative;
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0 auto;
+  text-align: right;
+  margin-right: 20px;
+}
+.users_voice_contents_txts_more:after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  right: -15px;
+  width: 4px;
+  height: 4px;
+  border-top: 4px solid #000;
+  border-right: 4px solid #000;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-sizing: content-box;
+}
+
+.users_voice_content_btns{
+  text-align: center;
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.btn_more{
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+  background: #000;
+  padding: 20px;
+  width: 90%;
+  max-width: 390px;
+  border-radius: 35px;
+  border-color: #ffcf07;
+}
+
 .arrows{
   text-align: center;
   padding-top: 2%;
@@ -284,42 +365,6 @@ export default {
   opacity: 0.7;
 }
 
-/* .next-page-button{
-  width: 100px;
-  height: 100px;
-}
-.back-page-button{
-  width: 100px;
-  height: 100px;
-} */
-/* .carousel-control-next, .carousel-control-prev {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 10%;
-  color: #fff;
-  text-align: center;
-  opacity: .5;
-  transition: opacity .15s ease;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 30px;
-  width: 30px;
-  outline: black;
-  background-size: 30%, 30%;
-  border-radius: 50%;
-  background-color: gray;
-} */
-
 @media screen and (max-width: 768px) {
 .section-title h1{
   margin-top: 48px;
@@ -327,7 +372,6 @@ export default {
 }
 
 .section-title h1:after {
-  /* position: absolute; */
   content: " ";
   display: block;
   border-bottom: solid 4px #ffcf07;
@@ -340,25 +384,29 @@ export default {
   width: 100%;
   margin: auto;
   margin-top: 48px;
-  background-color: #FFF8EA;
+  background-color: #ffcf07;
   font-weight: bold;
   padding-top: 60px;
 }
 
-.users-voice-detail{
-  width: 100%;
-  height: 350px;
-  /* background: #FFF8EA; */
-  /* margin-bottom: 48px; */
-  text-align: center;
-  font-family: "TsukuBRdGothic-Regular";
+.users_voice_content .users-voice[data-v-7371a323]{
 }
-.users-voice-detail h5{
-  font-size: 15px;
+
+.users_voice_content .section-title h1[data-v-7371a323]:after{
+  margin-top: 15px;
+  height: 4px;
+  width: 100px;
 }
-.users-voice-detail p{
-  font-size: 13px;
+.users_voice_contents{
+  display: block;
+  width: 90%;
+  max-width: 314px;
+  margin: 30px auto 0;
 }
+.users_voice_contents:first-child{
+  margin: 0 auto;
+}
+
 .arrows{
   width: 100%;
   margin-top: 20%;

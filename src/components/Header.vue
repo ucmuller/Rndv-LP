@@ -1,8 +1,10 @@
 <template>
       <b-navbar class="custom-navbar fixed" toggleable="lg">
         <b-navbar-brand class="logo_a">
-          <router-link to="/"><img class="navbar-brand" src="@/assets/img/RNDV_logo.png" width="60%" id="logo_custom" alt="logo"></router-link>
-          <img v-if="width < 768" src="@/assets/img/btn/login_button.png" v-on:click="ankerLink('https://reserve-beta.firebaseapp.com/signinfromlp')" class="subscribe-button" alt="">
+          <router-link to="/">
+            <img class="navbar-brand" src="@/assets/img/RNDV_logo.png" width="60%" id="logo_custom" alt="logo">
+          </router-link>
+          <!-- <img v-if="width < 768" src="@/assets/img/btn/login_button.png" v-on:click="ankerLink('https://reserve-beta.firebaseapp.com/signinfromlp')" class="subscribe-button" alt=""> -->
           <!-- <div class="subscribe-button" v-on:click="ankerLink('https://reserve-beta.firebaseapp.com/signin')"></div> -->
         </b-navbar-brand>
         <b-navbar-toggle class="" target="nav-collapse"></b-navbar-toggle>
@@ -16,7 +18,7 @@
               <b-nav-item class="nav-parts" href="#information"><span class="under-line">FAQ</span></b-nav-item>
               <b-nav-item class="nav-parts" href="#users-voice"><span class="under-line">ユーザーの声</span></b-nav-item>
               <!-- <button class="subscribe-button"></button> -->
-              <div class="subscribe-button nav-parts" v-on:click="ankerLink('https://reserve-beta.firebaseapp.com/signinfromlp')"></div>
+              <button class="nav-parts common_btn btn_2" v-on:click="ankerLink('https://apps.apple.com/jp/app/id1485140161')">今すぐ始める</button>
             </b-navbar-nav>
           </b-navbar-nav>
         </b-collapse>
@@ -97,18 +99,6 @@ export default {
   width:20%;
 }
 
-.subscribe-button {
-  border-radius: 25px;
-  color: #FFF;
-  background-image: url(../assets/img/btn/login_button.png);
-  background-repeat:no-repeat;
-  background-size: contain;
-  transition: .4s;
-  width: 150px;
-  height: 100%;
-  margin: auto;
-}
-
 .nav-parts{
   margin-left: 40px;
 }
@@ -116,6 +106,33 @@ export default {
 .under-line:hover{
   border-bottom: solid 2px #ffcf07;
   color: #ffcf07;
+}
+
+.common_btn{
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.btn_2{
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #242a37;
+  padding: 0px;
+  border-radius: 10px;
+  width: 150px;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 769px) {
@@ -146,17 +163,8 @@ export default {
   margin-left: 0px;
 }
 
-.subscribe-button {
-  border-radius: 25px;
-  color: #FFF;
-  background-image: url(../assets/img/btn/login_button.png);
-  background-repeat:no-repeat;
-  background-size: contain;
-  transition: .4s;
-  width: 120px;
-  height: 100%;
-  margin: auto;
-  margin-left: 65px;
+.btn_2 {
+  display: none;
 }
 
 }

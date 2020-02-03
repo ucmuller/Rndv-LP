@@ -5,10 +5,14 @@
               <h1 class="text-center"><strong><span class="under-line">さあ、始めましょう</span></strong></h1>
             </div>
             <div class="subscribe-title">
-              <h5 class="text-center">メールアドレスで登録。カンタン利用！</h5>
+              <h5 class="text-center">AppStoreからダウンロードして<br class="forSP">今すぐ利用できます。<br>iPhone以外のデバイスでの利用をご希望の方は<br>TwitterのDMよりお知らせください！</h5>
             </div>
             <div class="form-group">
-              <div class="cp_iptxt">
+            <div class="btns_bar_body">
+              <a class="common_btn btn_2" href="https://apps.apple.com/jp/app/id1485140161" target="_blank"><img src="@/assets/img/btn_app.png" width="148" height="40" alt="Download on the App Sttore"></a>
+              <a class="common_btn btn_3" href="https://twitter.com/rndv_ceo" target="_blank">iPhone以外の<br>デバイスで利用</a>
+            </div>
+              <!-- <div class="cp_iptxt">
                 <p>メールアドレス<span style="color: red;">[必須]</span></p>
                 <input v-model="email" type="email" class="" id="email" placeholder="aaa@exmaple.com">
               </div>
@@ -32,7 +36,7 @@
             </b-form-checkbox>
                 <div class="subscribe-button-area">
                   <div class="subscribe-button-2" @click="showModal('my-modal')"></div>
-                </div>
+                </div> -->
             </div>
 
         </div>
@@ -240,6 +244,61 @@ input {
   margin-top: 30px;
 }
 
+.btns_bar_body{
+  text-align: center;
+}
+
+.common_btn{
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.btn_2{
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: #242a37;
+  padding: 15px 30px;
+  border-radius: 10px;
+  width: 220px;
+  margin-bottom: 20px;
+}
+.btn_3{
+  font-size: 18px;
+  font-weight: 900;
+  color: #242a37;
+  background: #fff;
+  padding: 7px 30px;
+  border: 1px solid #242a37;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 220px;
+  margin-bottom: 20px;
+}
+.btn_more{
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+  background: #000;
+  padding: 20px;
+  width: 90%;
+  max-width: 390px;
+  border-radius: 35px;
+}
+.common_btn:hover{
+  opacity: 0.7;
+  text-decoration: none;
+  color: #fff;
+}
+.btn_3:hover{
+  color: #242a37;
+}
+
 @media screen and (max-width: 768px) {
 .section-title h1{
   margin-top: 48px;
@@ -267,6 +326,38 @@ input {
 .form-p {
   font-size: 13px;
   /* margin-top: 56px; */
+}
+
+.btns_bar{
+  padding: 6px 0 13px;
+  overflow:hidden;
+}
+.btns_bar_txt{
+  font-size: 14px;
+  display: block;
+  line-height: 2;
+  height: auto;
+}
+.btns_bar_body{
+  margin: 2px auto 0;
+  display: block;
+  width: 90%;
+  max-width: 420px;
+}
+.btns_bar .common_btn{
+  width: 49%;
+  height:50px;
+  float:left;
+  border-radius:10px;
+}
+.btns_bar .btn_2 img{
+  width: auto;
+  height: 60%;
+}
+.btns_bar .btn_3{
+  padding-top:7px;
+  font-size: 13px;
+  margin-left:2%;
 }
 }
 </style>

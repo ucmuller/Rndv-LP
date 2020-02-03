@@ -66,7 +66,7 @@ export default {
 /* GLOBAL STYLES
 -------------------------------------------------- */
 .wrap{
-  width: 85%;
+  width: 98%;
   overflow: hidden;
   margin: auto;
   margin-top: 80px;
@@ -105,7 +105,7 @@ export default {
 @media screen and (max-width: 769px) {
 
 .wrap{
-  width: 90%;
+  width: 100%;
   overflow: hidden;
   margin: auto;
   margin-top: 60px;
@@ -146,13 +146,6 @@ p{
   font-weight: bold;
   z-index: 1;
   text-align: left;
-}
-
-.first-view{
-  position: relative;
-  margin: auto;
-  background-color: #FFD428;
-  padding-top: 93%;
 }
 
 video {
