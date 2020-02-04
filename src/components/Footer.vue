@@ -35,18 +35,16 @@
         <div class="footer-contents-parts"><router-link to="/frequentlyaskedquestions" class="footer-anker">よくあるご質問</router-link></div>
       </div>
       <div class="footer-contents">
-        <div class="footer-contents-parts"><a href="https://rendezvous.studio.design/" class="footer-anker">サービスへの想い</a></div>
+        <!-- <div class="footer-contents-parts"><a href="https://rendezvous.studio.design/" class="footer-anker">サービスへの想い</a></div> -->
         <!-- <div class="footer-contents-parts">
           <img src="@/assets/img/Facebook.png" width="50px" style="margin-right:10px;" alt="">
           <img src="@/assets/img/Twitter.png" width="50px" alt="">
         </div> -->
-      </div>
-
       <div class="button-area">
-       <button class="btn-flat-border" v-on:click="sendMail">お問い合わせ</button>
+       <button class="footer-contents-parts btn-flat-border" v-on:click="sendMail">お問い合わせ</button>
       </div>
-
-            <div class="footer-contents">
+      </div>
+      <div class="footer-contents">
         <div class="footer-contents-parts">
           <img src="@/assets/img/docomo.png" width="200px" style="margin-right:10px;" alt="">
         </div>

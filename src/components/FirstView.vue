@@ -15,8 +15,8 @@
     <div class="btns_bar fv_info">
       <p class="btns_bar_txt">今すぐ使ってみる</p>
       <div class="btns_bar_body">
-        <a class="common_btn btn_2" href="#" target="_blank"><img src="@/assets/img/btn_app.png" width="148" height="40" alt="Download on the App Sttore"></a>
-        <a class="common_btn btn_3" href="https://twitter.com/rndv_ceo" target="_blank">iPhone以外の<br>デバイスで利用</a>
+        <a class="common_btn btn_2" href="https://apps.apple.com/jp/app/id1485140161" target="_blank"><img src="@/assets/img/btn_app.png" width="148" height="40" alt="Download on the App Sttore"></a>
+        <a class="common_btn btn_3" href="https://twitter.com/rndv_ceo" target="_blank">twitterの<br>DMへ</a>
       </div>
     </div>
   </div>
@@ -49,7 +49,7 @@ export default {
     return {
       swiperOption: {
         autoplay: {
-          delay: 2500,
+          delay: 7500,
           disableOnInteraction: false
         },
         spaceBetween: 30,
