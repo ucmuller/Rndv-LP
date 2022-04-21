@@ -7,8 +7,6 @@
         <div class="footer-contents-parts"><router-link to="/frequentlyaskedquestions" class="footer-anker">よくあるご質問</router-link></div>
         <div class="footer-contents-parts"><a href="https://rendezvous.studio.design/" class="footer-anker">運営会社</a></div>
         <div class="footer-contents-parts">
-          <!-- <img src="@/assets/img/Facebook.png" width="50px" style="margin-right:10px;" alt="">
-          <img src="@/assets/img/Twitter.png" width="50px" alt=""> -->
           <img src="@/assets/img/docomo.png" width="150px" alt="">
         </div>
       </div>
@@ -17,13 +15,6 @@
         <p class="text-center">&copy; Copyright © 2019 RNDV Inc. All rights reserved.</p>
         <button class="btn-flat-border" v-on:click="sendMail">お問い合わせ</button>
       </div>
-        <!-- <p class="text-center">
-          <router-link to="/privacypolicy">プライバシーポリシー</router-link>
-          |
-          <router-link to="/tos">利用規約</router-link>
-          <br>
-          <router-link to="/payment">成果報酬の支払い方法</router-link>
-        </p> -->
     </footer>
     <footer v-else-if="width < 768" class="container footer bottom-section">
       <div class="footer-contents">
@@ -35,11 +26,6 @@
         <div class="footer-contents-parts"><router-link to="/frequentlyaskedquestions" class="footer-anker">よくあるご質問</router-link></div>
       </div>
       <div class="footer-contents">
-        <!-- <div class="footer-contents-parts"><a href="https://rendezvous.studio.design/" class="footer-anker">サービスへの想い</a></div> -->
-        <!-- <div class="footer-contents-parts">
-          <img src="@/assets/img/Facebook.png" width="50px" style="margin-right:10px;" alt="">
-          <img src="@/assets/img/Twitter.png" width="50px" alt="">
-        </div> -->
       <div class="button-area">
        <button class="footer-contents-parts btn-flat-border" v-on:click="sendMail">お問い合わせ</button>
       </div>
@@ -52,13 +38,6 @@
       <div class="button-area">
         <p class="text-center">&copy; Copyright © 2019 RNDV Inc. All rights reserved.</p>
       </div>
-        <!-- <p class="text-center">
-          <router-link to="/privacypolicy">プライバシーポリシー</router-link>
-          |
-          <router-link to="/tos">利用規約</router-link> ｀
-          <br>
-          <router-link to="/payment">成果報酬の支払い方法</router-link>
-        </p> -->
     </footer>
 
 </template>
@@ -86,13 +65,12 @@ export default {
       this.width = window.innerWidth
     },
     sendMail () {
-      location.href = 'mailto:' + 'cs@rndv.jp'
+      location.href = 'mailto:' + 'info@rndv.jp'
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .footer{
   background-color: #54585B;

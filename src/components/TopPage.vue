@@ -1,7 +1,6 @@
 <template>
   <div class="wrap">
         <first-view/>
-        <!-- <div class="subscribe-button" v-on:click="ankerLink('subscribe')"></div> -->
         <service-section/>
         <howto-section/>
         <div class="subscribe-button" v-on:click="ankerLink('subscribe')"></div>
@@ -9,9 +8,6 @@
         <information-section/>
         <users-voice/>
         <subscribe-section/>
-        <!-- <picture>
-            <img src="@/assets/img/sectionLine.png" width="100%" alt="">
-        </picture> -->
         <div class="scroll-top" id="js-button" v-on:click="scrollTop('js-button', 500)"><img src="@/assets/img/angle-up.png" alt="" width="100%"></div>
   </div>
 </template>
@@ -61,7 +57,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 /* GLOBAL STYLES
 -------------------------------------------------- */

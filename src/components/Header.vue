@@ -4,8 +4,6 @@
           <router-link to="/">
             <img class="navbar-brand" src="@/assets/img/RNDV_logo.png" width="60%" id="logo_custom" alt="logo">
           </router-link>
-          <!-- <img v-if="width < 768" src="@/assets/img/btn/login_button.png" v-on:click="ankerLink('https://reserve-beta.firebaseapp.com/signinfromlp')" class="subscribe-button" alt=""> -->
-          <!-- <div class="subscribe-button" v-on:click="ankerLink('https://reserve-beta.firebaseapp.com/signin')"></div> -->
         </b-navbar-brand>
         <b-navbar-toggle class="" target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
@@ -49,7 +47,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .custom-navbar{
   width: 100%;

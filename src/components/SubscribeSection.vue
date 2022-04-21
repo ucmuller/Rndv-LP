@@ -12,33 +12,7 @@
               <a class="common_btn btn_2" href="https://apps.apple.com/jp/app/id1485140161" target="_blank"><img src="@/assets/img/btn_app.png" width="148" height="40" alt="Download on the App Sttore"></a>
               <a class="common_btn btn_3" href="https://twitter.com/rndv_ceo" target="_blank">twitterの<br>DMへ</a>
             </div>
-              <!-- <div class="cp_iptxt">
-                <p>メールアドレス<span style="color: red;">[必須]</span></p>
-                <input v-model="email" type="email" class="" id="email" placeholder="aaa@exmaple.com">
-              </div>
-              <div class="cp_iptxt">
-                <p>ご紹介者様のお名前<span>[任意]</span></p>
-                <input v-model="staff_name" type="text" class="" id="" placeholder="">
-              </div>
-              <div class="cp_iptxt">
-                <p>ご紹介者様の勤務店舗<span>[任意]</span></p>
-                <input v-model="staff_workplace" type="text" class="" id="" placeholder="">
-              </div>
-            <b-form-checkbox
-              id="checkbox-1"
-              v-model="tos_status"
-              name="checkbox-1"
-              value="accepted"
-              unchecked-value="not_accepted"
-              class="text-center form-p"
-            >
-            <router-link to="/privacypolicy">「個人情報の取り扱い」</router-link>をご一読の上、ご登録お願いします。
-            </b-form-checkbox>
-                <div class="subscribe-button-area">
-                  <div class="subscribe-button-2" @click="showModal('my-modal')"></div>
-                </div> -->
-            </div>
-
+          </div>
         </div>
         <b-modal ref="my-modal" hide-footer centered title="ご入力ありがとうございます。">
             <div class="d-block text-center">
@@ -107,16 +81,22 @@ export default {
 
       mailer(data)
         .then(() => {
-          console.log('success!')
           this.hideModal('my-modal')
           this.showModal('ok-modal')
         })
         .catch(err => {
-          console.log(err)
         })
         .finally(() => {
           this.loading = false
           this.$ga.event('subscribe-button')
+        })
+    },
+    sendInfoMail () {
+      const mailer = functions.httpsCallable('sendInfoMail')
+      mailer()
+        .then(() => {
+        })
+        .catch(err => {
         })
     }
   }

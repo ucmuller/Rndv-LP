@@ -53,7 +53,9 @@
                       <div class="text-left information-question">
                         <div class="information-icon"><img src="@/assets/img/A1.png" width="35px" alt=""></div>
                         <p>
-                          キャンペーン期間を延長し（※2020年6月末）は、ランデブの運営会社、株式会社ランデブーがお支払い致します。
+                          キャンペーン期間中は、ランデブの運営会社、株式会社ランデブーがお支払い致します。
+                          <br>
+                          ※2020年3月持ってリリースキャンペーン（ランデブから報酬をお支払いする）は終了しました。
                         </p>
                       </div>
                     </b-card-text>
@@ -78,11 +80,7 @@
                       <div class="text-left information-question">
                         <div class="information-icon"><img src="@/assets/img/A1.png" width="35px" alt=""></div>
                         <p>
-                          2020年2月末の成果確定した未払い分を3月末日に各自ご登録頂きましたLINE Payでお支払いいたします。
-                          LINE PAYのご登録に関しては、2月末日を目安にご連絡させていただきます。
-                          <br>
-                          また、2020年3月以降の成果に関しましては、毎月の成果を翌々月の10日にお支払いとなります。
-                          （※お支払い対象は3,000円以上の成果を超えてからとなります。3,000円未満の場合は翌月への繰越となります。）
+                          ※2020年3月持ってリリースキャンペーン（ランデブから報酬をお支払いする）は終了しました。
                         </p>
                       </div>
                     </b-card-text>

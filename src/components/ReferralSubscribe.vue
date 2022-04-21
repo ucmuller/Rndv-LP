@@ -104,12 +104,10 @@ export default {
 
       mailer(data)
         .then(() => {
-          console.log('success!')
           this.hideModal('my-modal')
           this.showModal('ok-modal')
         })
         .catch(err => {
-          console.log(err)
         })
         .finally(() => {
           this.loading = false

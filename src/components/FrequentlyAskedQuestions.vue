@@ -59,7 +59,7 @@
                       <div class="text-left information-question">
                         <div class="information-icon"><img src="@/assets/img/A1.png" width="35px" alt=""></div>
                         <p>
-                          キャンペーン期間を延長し（※2020年6月末）は、ランデブの運営会社、株式会社ランデブーがお支払い致します。<br>※キャンペーン期間や還元率、配布条件などは予告なく終了する可能性がありますが、アプリ通知、サイト内でご案内差し上げます。
+                          キャンペーン期間中は、ランデブの運営会社、株式会社ランデブーがお支払い致します。<br>※2020年3月持ってリリースキャンペーン（ランデブから報酬をお支払いする）は終了しました。
                         </p>
                       </div>
                     </b-card-text>
@@ -89,6 +89,9 @@
                           <br>
                           また、2020年3月以降の成果に関しましては、毎月の成果を翌々月の10日にお支払いとなります。
                           （※お支払い対象は3,000円以上の成果を超えてからとなります。3,000円未満の場合は翌月への繰越となります。）
+                          <br>
+                          <br>
+                          ※2020年3月持ってリリースキャンペーン（ランデブから報酬をお支払いする）は終了しました。
                         </p>
                       </div>
                     </b-card-text>
@@ -225,7 +228,7 @@
                       <div class="text-left information-question">
                         <div class="information-icon"><img src="@/assets/img/A1.png" width="35px" alt=""></div>
                         <p>
-                          ご利用が多く、サービス評価が上がっておりますので、2019年12月末までのキャンペーンを2020年6月末まで延長しました。
+                          2020年3月持ってリリースキャンペーン（ランデブから報酬をお支払いする）は終了しました。
                         </p>
                       </div>
                     </b-card-text>
@@ -275,16 +278,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_8 = !q_8" v-b-toggle.accordion-8 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_9 = !q_9" v-b-toggle.accordion-9 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>お店が契約してなくても個人で利用することが可能ですか？</p>
                     </div>
-                    <div v-if="q_8" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_8" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_9" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_9" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-8" visible accordion="my-accordion8" role="tabpanel">
+                <b-collapse id="accordion-9" visible accordion="my-accordion9" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -304,16 +307,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_9 = !q_9" v-b-toggle.accordion-9 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_10 = !q_10" v-b-toggle.accordion-10 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>複数の店舗で働いているのですが、複数店舗を登録することは出来ますか？</p>
                     </div>
-                    <div v-if="q_9" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_9" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_10" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_10" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-9" accordion="my-accordion9" role="tabpanel">
+                <b-collapse id="accordion-10" accordion="my-accordion10" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -331,16 +334,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_10 = !q_10" v-b-toggle.accordion-10 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_11 = !q_11" v-b-toggle.accordion-11 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>新しい店舗・プロフィール写真を登録し直せますか？</p>
                     </div>
-                    <div v-if="q_10" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_10" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_11" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_11" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-10" accordion="my-accordion10" role="tabpanel">
+                <b-collapse id="accordion-11" accordion="my-accordion11" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -361,16 +364,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_11 = !q_11" v-b-toggle.accordion-11 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_12 = !q_12" v-b-toggle.accordion-12 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>同じお店のスタッフとアカウントを共有することは可能ですか？</p>
                     </div>
-                    <div v-if="q_11" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_11" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_12" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_12" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-11" accordion="my-accordion11" role="tabpanel">
+                <b-collapse id="accordion-12" accordion="my-accordion12" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -390,16 +393,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_12 = !q_12" v-b-toggle.accordion-12 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_13 = !q_13" v-b-toggle.accordion-13 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>LINEを利用していないと使えませんか？</p>
                     </div>
-                    <div v-if="q_12" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_12" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_13" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_13" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-12" accordion="my-accordion12" role="tabpanel">
+                <b-collapse id="accordion-13" accordion="my-accordion13" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -417,16 +420,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_13 = !q_13" v-b-toggle.accordion-13 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_14 = !q_14" v-b-toggle.accordion-14 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>退会したいのですがどうすれば出来ますか？</p>
                     </div>
-                    <div v-if="q_13" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_13" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_14" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_14" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-13" accordion="my-accordion13" role="tabpanel">
+                <b-collapse id="accordion-14" accordion="my-accordion14" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -446,16 +449,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_14 = !q_14" v-b-toggle.accordion-14 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_15 = !q_15" v-b-toggle.accordion-15 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>退会時に貯まっている報酬はどうなりますか？</p>
                     </div>
-                    <div v-if="q_14" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_14" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_15" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_15" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-14" accordion="my-accordion14" role="tabpanel">
+                <b-collapse id="accordion-15" accordion="my-accordion15" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -473,16 +476,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_15 = !q_15" v-b-toggle.accordion-15 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_16 = !q_16" v-b-toggle.accordion-16 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>機種を変更しても利用することが出来ますか？</p>
                     </div>
-                    <div v-if="q_15" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_15" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_16" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_16" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-15" accordion="my-accordion15" role="tabpanel">
+                <b-collapse id="accordion-16" accordion="my-accordion16" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -509,16 +512,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_16 = !q_16" v-b-toggle.accordion-16 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_17 = !q_17" v-b-toggle.accordion-17 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>LINEで繋がっていない友人・家族は招待出来ないのですか？</p>
                     </div>
-                    <div v-if="q_16" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_16" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_17" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_17" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-16" visible accordion="my-accordion16" role="tabpanel">
+                <b-collapse id="accordion-17" visible accordion="my-accordion17" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -534,16 +537,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_17 = !q_17" v-b-toggle.accordion-17 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_18 = !q_18" v-b-toggle.accordion-18 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>確定ボタンを押された後に人数の変更、キャンセルがあった場合はどうすればよいですか？</p>
                     </div>
-                    <div v-if="q_17" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_17" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_18" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_18" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-17" accordion="my-accordion17" role="tabpanel">
+                <b-collapse id="accordion-18" accordion="my-accordion18" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -559,35 +562,10 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_18 = !q_18" v-b-toggle.accordion-18 variant="light">
-                    <div class="text-left information-question">
-                      <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
-                      <p>LINEで招待の送信が出来ません。</p>
-                    </div>
-                    <div v-if="q_18" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_18" class="information-icon"><v-icon name="angle-down"/></div>
-                  </b-button>
-                </b-card-header>
-                <b-collapse id="accordion-18" accordion="my-accordion18" role="tabpanel">
-                  <b-card-body>
-                    <b-card-text>
-                      <div class="text-left information-question">
-                        <div class="information-icon"><img src="@/assets/img/A1.png" width="35px" alt=""></div>
-                        <p>
-                          恐れ入りますが、登録時のエラーが原因となります。恐れ入りますが、ログイン→右上の歯車を押下→お問い合わせよりご連絡を下さい。
-                        </p>
-                      </div>
-                    </b-card-text>
-                  </b-card-body>
-                </b-collapse>
-              </b-card>
-
-              <b-card no-body class="mb-1">
-                <b-card-header header-tag="header" class="p-1" role="tab">
                   <b-button class="text-left information-question" block v-on:click="q_19 = !q_19" v-b-toggle.accordion-19 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
-                      <p>招待して確認画面が開けず真っ白になります。</p>
+                      <p>LINEで招待の送信が出来ません。</p>
                     </div>
                     <div v-if="q_19" class="information-icon"><v-icon name="angle-up"/></div>
                     <div v-if="!q_19" class="information-icon"><v-icon name="angle-down"/></div>
@@ -612,13 +590,38 @@
                   <b-button class="text-left information-question" block v-on:click="q_20 = !q_20" v-b-toggle.accordion-20 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
-                      <p>LINE以外でTwitterやインスタで集客したいのですが、可能ですか？</p>
+                      <p>招待して確認画面が開けず真っ白になります。</p>
                     </div>
                     <div v-if="q_20" class="information-icon"><v-icon name="angle-up"/></div>
                     <div v-if="!q_20" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
                 <b-collapse id="accordion-20" accordion="my-accordion20" role="tabpanel">
+                  <b-card-body>
+                    <b-card-text>
+                      <div class="text-left information-question">
+                        <div class="information-icon"><img src="@/assets/img/A1.png" width="35px" alt=""></div>
+                        <p>
+                          恐れ入りますが、登録時のエラーが原因となります。恐れ入りますが、ログイン→右上の歯車を押下→お問い合わせよりご連絡を下さい。
+                        </p>
+                      </div>
+                    </b-card-text>
+                  </b-card-body>
+                </b-collapse>
+              </b-card>
+
+              <b-card no-body class="mb-1">
+                <b-card-header header-tag="header" class="p-1" role="tab">
+                  <b-button class="text-left information-question" block v-on:click="q_21 = !q_21" v-b-toggle.accordion-21 variant="light">
+                    <div class="text-left information-question">
+                      <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
+                      <p>LINE以外でTwitterやインスタで集客したいのですが、可能ですか？</p>
+                    </div>
+                    <div v-if="q_21" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_21" class="information-icon"><v-icon name="angle-down"/></div>
+                  </b-button>
+                </b-card-header>
+                <b-collapse id="accordion-21" accordion="my-accordion21" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -634,16 +637,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_21 = !q_21" v-b-toggle.accordion-21 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_22 = !q_22" v-b-toggle.accordion-22 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>招待をして、確定しなかった招待を消すことが出来ますか？</p>
                     </div>
-                    <div v-if="q_21" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_21" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_22" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_22" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-21" accordion="my-accordion21" role="tabpanel">
+                <b-collapse id="accordion-22" accordion="my-accordion22" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -670,16 +673,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_22 = !q_22" v-b-toggle.accordion-22 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_23 = !q_23" v-b-toggle.accordion-23 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>ランデブの由来を教えて下さい</p>
                     </div>
-                    <div v-if="q_22" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_22" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_23" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_23" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-22" visible accordion="my-accordion22" role="tabpanel">
+                <b-collapse id="accordion-23" visible accordion="my-accordion23" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -712,16 +715,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_23 = !q_23" v-b-toggle.accordion-23 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_24 = !q_24" v-b-toggle.accordion-24 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>対応エリアについて</p>
                     </div>
-                    <div v-if="q_23" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_23" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_24" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_24" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-23" visible accordion="my-accordion23" role="tabpanel">
+                <b-collapse id="accordion-24" visible accordion="my-accordion24" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -737,16 +740,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_24 = !q_24" v-b-toggle.accordion-24 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_25 = !q_25" v-b-toggle.accordion-25 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>ランデブは扶養に含まれていますか？確定申告は必要ですか？</p>
                     </div>
-                    <div v-if="q_24" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_24" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_25" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_25" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-24" accordion="my-accordion24" role="tabpanel">
+                <b-collapse id="accordion-25" accordion="my-accordion25" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -774,16 +777,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_25 = !q_25" v-b-toggle.accordion-25 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_26 = !q_26" v-b-toggle.accordion-26 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>未成年でも利用することが出来ますか？</p>
                     </div>
-                    <div v-if="q_25" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_25" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_26" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_26" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-25" accordion="my-accordion25" role="tabpanel">
+                <b-collapse id="accordion-26" accordion="my-accordion26" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -803,16 +806,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_26 = !q_26" v-b-toggle.accordion-26 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_27 = !q_27" v-b-toggle.accordion-27 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>ランデブは副業になりますか？</p>
                     </div>
-                    <div v-if="q_26" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_26" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_27" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_27" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-26" accordion="my-accordion26" role="tabpanel">
+                <b-collapse id="accordion-27" accordion="my-accordion27" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -832,16 +835,16 @@
 
               <b-card no-body class="mb-1">
                 <b-card-header header-tag="header" class="p-1" role="tab">
-                  <b-button class="text-left information-question" block v-on:click="q_27 = !q_27" v-b-toggle.accordion-27 variant="light">
+                  <b-button class="text-left information-question" block v-on:click="q_28 = !q_28" v-b-toggle.accordion-28 variant="light">
                     <div class="text-left information-question">
                       <div class="information-icon"><img src="@/assets/img/Q1.png" width="40px" alt=""></div>
                       <p>ios版・Android版のサービス提供はありませんか？</p>
                     </div>
-                    <div v-if="q_27" class="information-icon"><v-icon name="angle-up"/></div>
-                    <div v-if="!q_27" class="information-icon"><v-icon name="angle-down"/></div>
+                    <div v-if="q_28" class="information-icon"><v-icon name="angle-up"/></div>
+                    <div v-if="!q_28" class="information-icon"><v-icon name="angle-down"/></div>
                   </b-button>
                 </b-card-header>
-                <b-collapse id="accordion-27" accordion="my-accordion27" role="tabpanel">
+                <b-collapse id="accordion-28" accordion="my-accordion28" role="tabpanel">
                   <b-card-body>
                     <b-card-text>
                       <div class="text-left information-question">
@@ -880,6 +883,7 @@ export default {
       q_13: false,
       q_14: false,
       q_15: false,
+      q_16: false,
       q_17: false,
       q_18: false,
       q_19: false,
@@ -890,7 +894,8 @@ export default {
       q_24: false,
       q_25: false,
       q_26: false,
-      q_27: false
+      q_27: false,
+      q_28: false
     }
   }
 }
